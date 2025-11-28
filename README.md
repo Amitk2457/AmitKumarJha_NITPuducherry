@@ -1,5 +1,5 @@
 
-# 📄 Bajaj Finserv Health Bill Extraction – AI Line-Item Parser (Open-Source)
+# Bajaj Finserv Health Bill Extraction
 
 This project is a **production-ready OCR + Layout Parsing Pipeline for hospital invoice understanding.**  
 It extracts individual bill line-items, quantities, rates, net amounts, and generates:
@@ -12,7 +12,7 @@ Supports **PDF, PNG, JPG invoices** with **automatic OCR + layout parsing** to p
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 | Feature | Description |
 |--------|-------------|
@@ -27,7 +27,7 @@ Supports **PDF, PNG, JPG invoices** with **automatic OCR + layout parsing** to p
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |----------|-------------|
@@ -61,7 +61,7 @@ bajaj-bill-extractor/
 
 ---
 
-## 🔧 Installation
+## Installation
 
 ```
 git clone <your repo link>
@@ -87,18 +87,18 @@ API URL → **http://localhost:8000/extract-bill-data**
 
 ---
 
-## 🔥 API Usage Example
+## API Usage Example
 
 **input.json**
 ```json
 {
-  "document": "https://hackrx.blob.core.windows.net/sample.pdf"
+  "document": "https://hackrx.blob.core.windows.net/sample.pdf](https://hackrx.blob.core.windows.net/assets/datathon-IIT/sample_1.png?sv=2025-07-05&spr=https&st=2025-11-24T14%3A21%3A03Z&se=2026-11-25T14%3A21%3A00Z&sr=b&sp=r&sig=2szJobwLVzcVSmg5IPWjRT9k7pHq2Tvifd6seRa2xRI%3D"
 }
 ```
 
 Run request:
 ```
-curl -X POST "http://localhost:8000/extract-bill-data" -H "Content-Type: application/json" -d @input.json
+curl -X POST "https://amitkumarjha-nitpuducherry.onrender.com/extract-bill-data" -H "Content-Type: application/json" -d @input.json
 ```
 
 ### 📌 Sample Output
@@ -108,26 +108,15 @@ curl -X POST "http://localhost:8000/extract-bill-data" -H "Content-Type: applica
   "data": {
     "pagewise_line_items": [...],
     "final_line_items": [...],
-    "total_item_count": 30,
+    "total_item_count": ...,
     "totals": {
-      "sum_extracted": 8250.0,
-      "invoice_total": 8250.0,
+      "sum_extracted": ...,
+      "invoice_total": ...,
       "diff": 0.0
     }
   }
 }
 ```
-
----
-
-## 🚀 Future Improvements
-
-🔹 Train LayoutLMv3 / Donut for high-accuracy table extraction  
-🔹 Improve header/footer noise filtering  
-🔹 Fraud detection via font + overwrite detection  
-🔹 Smarter subtotal detection for bonus scoring  
-
----
 
 ## 👤 Author
 
