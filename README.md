@@ -64,8 +64,8 @@ bajaj-bill-extractor/
 ## Installation
 
 ```
-git clone <your repo link>
-cd bajaj-bill-extractor
+git clone https://github.com/Amitk2457/AmitKumarJha_NITPuducherry.git
+cd AmitKumarJha_NITPuducherry
 
 conda create -n bajaj python=3.10 -y
 conda activate bajaj
@@ -83,7 +83,7 @@ pip install -r requirements.txt
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-API URL → **https://amitkumarjha-nitpuducherry.onrender.com**
+API URL → **https://manual-quadrivalent-unsplenetically.ngrok-free.dev **
 
 ---
 
@@ -98,7 +98,7 @@ API URL → **https://amitkumarjha-nitpuducherry.onrender.com**
 
 Run request:
 ```
-curl -X POST "https://amitkumarjha-nitpuducherry.onrender.com/extract-bill-data" -H "Content-Type: application/json" -d @input.json
+curl -X POST "https://manual-quadrivalent-unsplenetically.ngrok-free.dev/extract-bill-data" -H "Content-Type: application/json" -d @input.json
 ```
 
 ### 📌 Sample Output
