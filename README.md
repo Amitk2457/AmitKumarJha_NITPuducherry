@@ -83,7 +83,7 @@ pip install -r requirements.txt
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-API URL → **http://localhost:8000/extract-bill-data**
+API URL → **https://amitkumarjha-nitpuducherry.onrender.com**
 
 ---
 
